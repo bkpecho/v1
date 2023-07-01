@@ -436,6 +436,10 @@ section .container {
   line-height: 0;
 }
 
+.about-me .content p {
+  font-size: 18px;
+}
+
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
