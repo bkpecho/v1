@@ -125,11 +125,11 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: var(--ff-sans);
+  font-family: 'Raleway', sans-serif;
 }
 
 #header h1 a {
-  color: var(--white);
+  color: var(--lightest-secondary);
   line-height: 1;
   display: inline-block;
 }
@@ -141,7 +141,7 @@ h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(230, 241, 255, 0.8);
+  color: var(--light-secondary);
 }
 
 #header h2 span {
@@ -215,7 +215,7 @@ h6 {
 
 #header.header-top h1 {
   margin-right: auto;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 #header.header-top img {
@@ -238,7 +238,7 @@ h6 {
   }
 
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #header .container {
