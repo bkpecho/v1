@@ -158,24 +158,23 @@ h6 {
 #header .social-links {
   margin-top: 40px;
   display: flex;
+  gap: 18px;
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(230, 241, 255, 0.1);
   color: var(--white);
   line-height: 1;
-  margin-right: 8px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  transition: transform 0.3s;
 }
 
 #header .social-links a:hover {
-  background: var(--hover);
+  color: var(--hover);
+  transform: translateY(-3px);
 }
 
 @media (max-width: 992px) {
@@ -284,8 +283,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: var(--ff-mono);
   font-size: 16px;
+  font-family: var(--ff-mono) !important;
   font-weight: 400;
   color: rgba(230, 241, 255, 0.7);
   white-space: nowrap;
@@ -434,7 +433,7 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0;
   line-height: 1px;
@@ -469,7 +468,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
   color: var(--accent);
 }
 
@@ -496,11 +495,28 @@ section .container {
 }
 
 .about-me .content p {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.about-me span {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-me span:hover {
+  color: var(--hover);
+  text-decoration: none;
+}
+
+.col-lg-8.pt-4.pt-lg-0.content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -590,6 +606,7 @@ section .container {
   padding: 20px;
   background: rgba(230, 241, 255, 0.08);
   transition: ease-in-out 0.3s;
+  gap: 10px;
 }
 
 .interests .icon-box i {
@@ -1012,7 +1029,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1022,7 +1039,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1030,7 +1047,7 @@ section .container {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .portfolio-details .portfolio-info ul li + li {
@@ -1038,7 +1055,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-info p {
-  font-size: 15px;
+  font-size: 16px;
   padding: 15px 0 0 0;
 }
 
@@ -1084,7 +1101,7 @@ section .container {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
+  font-size: 24px;
   color: rgba(230, 241, 255, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
@@ -1094,7 +1111,7 @@ section .container {
   padding: 0;
   color: var(--white);
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 0 0 68px;
 }
 
@@ -1165,7 +1182,7 @@ section .container {
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 18px;
   background: rgba(230, 241, 255, 0.08);
   border: 0;
   transition: 0.3s;
