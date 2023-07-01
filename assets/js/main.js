@@ -258,3 +258,11 @@
    */
   new PureCounter();
 })();
+
+// Lamp
+
+// document.addEventListener('mousemove', function (event) {
+//   var lamp = document.querySelector('.lamp');
+//   lamp.style.left = event.clientX + 'px';
+//   lamp.style.top = event.clientY + 'px';
+// });
