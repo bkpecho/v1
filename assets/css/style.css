@@ -9,6 +9,39 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* Fonts */
+@font-face {
+  font-family: 'Calibre';
+  src: url('/assets/fonts/Calibre/Calibre-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('/assets/fonts/Calibre/Calibre-Medium.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('/assets/fonts/Calibre/Calibre-Semibold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/assets/fonts/SFMono/SFMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/assets/fonts/SFMono/SFMono-Semibold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/assets/fonts/SFMono/SFMono-Medium.ttf') format('truetype');
+  font-weight: 700;
+}
+
 :root {
   --primary: #0a192f;
   --light-primary: #112240;
@@ -19,11 +52,14 @@
   --white: #e6f1ff;
   --accent: #64ffda;
   --hover: #32d5b7;
+
+  --ff-sans: 'Calibre', sans-serif;
+  --ff-mono: 'SF Mono', monospace;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #0a192f;
+  font-family: var(--ff-sans);
+  background-color: var(--primary);
   color: var(--white);
   position: relative;
   background: transparent;
@@ -32,7 +68,7 @@ body {
 body::before {
   content: '';
   position: fixed;
-  background: #0a192f;
+  background: var(--primary);
   background-size: cover;
   left: 0;
   right: 0;
@@ -63,7 +99,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--ff-sans);
 }
 
 /*--------------------------------------------------------------
@@ -89,7 +125,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-sans);
 }
 
 #header h1 a {
@@ -248,7 +284,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-mono);
   font-size: 16px;
   font-weight: 400;
   color: rgba(230, 241, 255, 0.7);
@@ -399,14 +435,14 @@ section .container {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   line-height: 1px;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--secondary);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-sans);
 }
 
 .section-title h2::after {
@@ -424,7 +460,7 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-sans);
   color: var(--white);
 }
 
@@ -505,7 +541,7 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--ff-mono);
   font-size: 14px;
 }
 
@@ -525,7 +561,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-sans);
   color: var(--white);
 }
 
@@ -564,6 +600,7 @@ section .container {
 
 .interests .icon-box h3 {
   font-weight: 700;
+  font-family: var(--ff-mono);
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -679,7 +716,7 @@ section .container {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-sans);
   color: var(--accent);
   margin-bottom: 10px;
 }
@@ -1161,6 +1198,7 @@ section .container {
 }
 
 .contact .php-email-form button[type='submit'] {
+  font-family: var(--ff-mono);
   background: var(--secondary);
   border: 0;
   padding: 10px 30px;
@@ -1219,3 +1257,15 @@ button[type='submit']:disabled {
 .credits a:hover {
   color: var(--hover);
 }
+
+/* Lamp */
+/* .lamp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0px 0 120px 120px rgba(100, 255, 218, 0.05);
+} */
