@@ -2,8 +2,6 @@
 # General
 --------------------------------------------------------------*/
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800&display=swap');
-
 @font-face {
   font-family: 'Calibre';
   src: url('/assets/fonts/Calibre/Calibre-Regular.ttf') format('truetype');
@@ -156,7 +154,7 @@ h6 {
 }
 
 #header .social-links a {
-  font-size: 18px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
