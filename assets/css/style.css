@@ -480,7 +480,7 @@ section .container {
 }
 
 .avatar {
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+  border-radius: 50%;
 }
 
 .about-me .content ul {
@@ -955,6 +955,7 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
+  border-radius: 0.25rem;
   color: #444444;
   padding: 20px;
   width: 100%;
@@ -1004,6 +1005,7 @@ section .container {
 }
 
 .contact .php-email-form {
+  border-radius: 0.25rem;
   padding: 30px;
   background: rgba(230, 241, 255, 0.08);
 }
@@ -1077,10 +1079,12 @@ section .container {
 }
 
 .contact .php-email-form input {
+  border-radius: 0.25rem;
   padding: 10px 15px;
 }
 
 .contact .php-email-form textarea {
+  border-radius: 0.25rem;
   padding: 12px 15px;
 }
 
