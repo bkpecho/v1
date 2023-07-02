@@ -2,6 +2,8 @@
 # General
 --------------------------------------------------------------*/
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800&display=swap');
+
 @font-face {
   font-family: 'Calibre';
   src: url('/assets/fonts/Calibre/Calibre-Regular.ttf') format('truetype');
@@ -117,7 +119,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Chivo', sans-serif;
 }
 
 #header h1 a {
@@ -154,7 +156,7 @@ h6 {
 }
 
 #header .social-links a {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,6 +200,8 @@ h6 {
   top: 0;
   right: 0;
   background: rgba(10, 25, 47, 0.9);
+  padding: 15px;
+  display: flex;
 }
 
 #header.header-top .social-links,
@@ -207,7 +211,17 @@ h6 {
 
 #header.header-top h1 {
   margin-right: auto;
-  font-size: 30px;
+  font-size: 24px;
+}
+
+#header.header-top h1 a {
+  color: var(--accent);
+  line-height: 1;
+  display: inline-block;
+}
+
+#header.header-top h1 a:hover {
+  color: var(--lightest-secondary);
 }
 
 #header.header-top img {
@@ -230,7 +244,7 @@ h6 {
   }
 
   #header.header-top h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #header .container {
@@ -285,7 +299,7 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -322,7 +336,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: var(--white);
-  font-size: 28px;
+  font-size: 32px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -362,7 +376,10 @@ h6 {
 }
 
 .navbar-mobile ul {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 55px;
   right: 15px;
@@ -384,7 +401,7 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -448,7 +465,7 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--ff-sans);
@@ -460,8 +477,12 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   color: var(--accent);
+}
+
+.avatar {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
 }
 
 .about-me .content ul {
@@ -480,14 +501,14 @@ section .container {
 }
 
 .about-me .content ul i {
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 5px;
   color: var(--accent);
   line-height: 0;
 }
 
 .about-me .content p {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .about-me .content p:last-child {
@@ -703,147 +724,6 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: var(--white);
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(230, 241, 255, 0.2);
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: var(--ff-sans);
-  color: var(--accent);
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(230, 241, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: var(--accent);
-  border: 2px solid var(--accent);
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  background: rgba(230, 241, 255, 0.1);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-}
-
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: var(--accent);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: var(--white);
-  font-size: 28px;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: '';
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(230, 241, 255, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: var(--white);
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
-.services .icon-box:hover .icon {
-  background: var(--white);
-}
-
-.services .icon-box:hover .icon i {
-  color: var(--accent);
-}
-
-.services .icon-box:hover .icon::before {
-  background: var(--hover);
-}
-
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: var(--white);
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -863,7 +743,7 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -956,7 +836,7 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: var(--white) fff;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -970,7 +850,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: var(--white);
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 32px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -1021,7 +901,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1031,7 +911,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1103,7 +983,7 @@ section .container {
   padding: 0;
   color: var(--white);
   line-height: 24px;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 0 68px;
 }
 
@@ -1245,7 +1125,7 @@ button[type='submit']:disabled {
   bottom: 0;
   padding: 15px;
   text-align: right;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--white);
   z-index: 999999;
 }
