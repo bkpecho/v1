@@ -127,6 +127,7 @@ h6 {
   align-items: center;
   color: var(--white);
   line-height: 1;
+  margin-right: 10px;
   border-radius: 50%;
   transition: transform 0.3s;
 }
@@ -915,7 +916,7 @@ section .container {
 }
 
 .contact .info-box .social-links a {
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
   color: var(--white);
   line-height: 1;
