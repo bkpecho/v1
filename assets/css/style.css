@@ -254,10 +254,10 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-size: 16px;
+  font-size: 13px;
   font-family: var(--ff-mono) !important;
   font-weight: 400;
-  color: rgba(230, 241, 255, 0.7);
+  color: var(--secondary);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -293,7 +293,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: var(--white);
+  color: var(--accent);
 }
 
 .navbar li:last-child {
@@ -496,7 +496,7 @@ section .container {
 }
 
 .about-me .content p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .about-me .content p:last-child {
@@ -872,6 +872,9 @@ section .container {
   padding: 20px;
   width: 100%;
   background: rgba(230, 241, 255, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .contact .info-box i.bx {
@@ -883,23 +886,31 @@ section .container {
   background: rgba(230, 241, 255, 0.1);
 }
 
+.contact .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .contact .info-box h3 {
-  font-size: 24px;
   color: rgba(230, 241, 255, 0.5);
+  font-family: var(--ff-mono);
+  font-size: 20px;
   font-weight: 700;
-  margin: 10px 0 8px 68px;
+  margin: 0 0 4px;
 }
 
 .contact .info-box p {
   padding: 0;
+  font-size: 16px;
+  font-family: var(--ff-sans);
+  font-weight: 400;
   color: var(--white);
-  line-height: 24px;
-  font-size: 18px;
-  margin: 0 0 0 68px;
+  margin: 0;
 }
 
 .contact .info-box .social-links {
-  margin: 5px 0 0 68px;
+  margin: 5px 0 0 0;
   display: flex;
 }
 
@@ -924,11 +935,12 @@ section .container {
 
 .contact .php-email-form .error-message {
   display: none;
-  background: rgba(230, 241, 255, 0.08);
   background: #ed3c0d;
+  color: var(--white);
   text-align: left;
   padding: 15px;
-  font-weight: 600;
+  font-family: var(--ff-mono);
+  font-weight: 700;
 }
 
 .contact .php-email-form .error-message br + br {
@@ -938,10 +950,11 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(230, 241, 255, 0.08);
-  background: var(--accent);
+  color: var(--accent);
   text-align: center;
   padding: 15px;
-  font-weight: 600;
+  font-family: var(--ff-mono);
+  font-weight: 700;
 }
 
 .contact .php-email-form .loading {
