@@ -1,49 +1,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* Fonts */
-@font-face {
-  font-family: 'Calibre';
-  src: url('/assets/fonts/Calibre/Calibre-Regular.woff2') format('woff2');
-  font-weight: 400;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('/assets/fonts/Calibre/Calibre-Medium.woff2') format('woff2');
-  font-weight: 600;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: 'Calibre';
-  src: url('/assets/fonts/Calibre/Calibre-Semibold.woff2') format('woff2');
-  font-weight: 700;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: 'SF Mono';
-  src: url('/assets/fonts/SFMono/SFMono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: 'SF Mono';
-  src: url('/assets/fonts/SFMono/SFMono-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  /* font-display: swap; */
-}
-
-@font-face {
-  font-family: 'SF Mono';
-  src: url('/assets/fonts/SFMono/SFMono-Medium.woff2') format('woff2');
-  font-weight: 700;
-  /* font-display: swap; */
-}
-
 :root {
   --primary: #0a192f;
   --light-primary: #112240;
@@ -55,8 +12,8 @@
   --accent: #64ffda;
   --hover: #32d5b7;
 
-  --ff-sans: 'Calibre', sans-serif;
-  --ff-mono: 'SF Mono', monospace;
+  --ff-sans: 'Karla', sans-serif;
+  --ff-mono: 'Space Mono', monospace;
 }
 
 body {
@@ -127,7 +84,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: 'Chivo', sans-serif;
+  font-family: var(--ff-mono);
 }
 
 #header h1 a {
@@ -175,7 +132,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  color: var(--hover);
+  color: var(--accent);
   transform: translateY(-3px);
 }
 
@@ -339,6 +296,24 @@ h6 {
   color: var(--white);
 }
 
+.navbar li:last-child {
+  border: 1px solid var(--accent);
+  border-radius: 0.25rem;
+  padding: 10px 16px;
+}
+
+.navbar li:last-child:hover {
+  box-shadow: 3px 3px var(--accent);
+  transform: translate(-3px, -3px);
+}
+.navbar li:last-child a {
+  color: var(--accent);
+}
+
+.navbar li:last-child a::before {
+  all: unset;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -371,7 +346,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(10, 25, 47, 0.9);
+  background: rgba(10, 25, 47, 0.98);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -405,6 +380,10 @@ h6 {
 
 .navbar-mobile li + li {
   margin: 0;
+}
+
+.navbar-mobile li:last-child {
+  margin-top: 30px;
 }
 
 .navbar-mobile a,
@@ -476,7 +455,7 @@ section .container {
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: var(--ff-sans);
+  font-family: var(--ff-mono);
   color: var(--white);
 }
 
@@ -487,6 +466,7 @@ section .container {
   font-weight: 700;
   font-size: 24px;
   color: var(--accent);
+  font-family: var(--ff-mono);
 }
 
 .avatar {
@@ -541,84 +521,6 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: rgba(230, 241, 255, 0.08);
-}
-
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: rgba(230, 241, 255, 0.1);
-  padding: 12px;
-  color: var(--accent);
-  border-radius: 50px;
-  line-height: 0;
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: var(--ff-mono);
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--ff-sans);
-  color: var(--white);
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(230, 241, 255, 0.2);
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent);
-}
-
-/*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
 .interests .icon-box {
@@ -637,7 +539,7 @@ section .container {
 }
 
 .interests .icon-box h3 {
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--ff-mono);
   margin: 0;
   padding: 0;
@@ -1002,11 +904,11 @@ section .container {
 }
 
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 24px;
   display: inline-block;
   color: var(--white);
   line-height: 1;
-  margin-right: 12px;
+  margin-right: 15px;
   transition: 0.3s;
 }
 
@@ -1100,16 +1002,17 @@ section .container {
 
 .contact .php-email-form button[type='submit'] {
   font-family: var(--ff-mono);
-  background: var(--secondary);
-  border: 0;
+  background: transparent;
+  border: 1px solid var(--accent);
   padding: 10px 30px;
-  color: var(--white);
-  transition: 0.4s;
-  border-radius: 4px;
+  color: var(--accent);
+  transition: 0.3s;
+  border-radius: 0.25rem;
 }
 
 .contact .php-email-form button[type='submit']:hover {
-  background: var(--light-secondary);
+  box-shadow: 3px 3px var(--accent);
+  transform: translate(-3px, -3px);
 }
 
 button[type='submit']:disabled {
