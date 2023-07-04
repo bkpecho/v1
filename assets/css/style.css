@@ -323,14 +323,14 @@ h6 {
 */
 .mobile-nav-toggle {
   color: var(--white);
-  font-size: 32px;
+  font-size: 24px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 20px;
+  top: 30px;
 }
 
 @media (max-width: 991px) {
@@ -357,9 +357,9 @@ h6 {
 }
 
 .navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  position: absolute !important;
+  top: 30px;
+  right: 20px;
 }
 
 .navbar-mobile ul {
@@ -689,8 +689,8 @@ section .container {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: var(--white);
-  margin: 0 2px;
-  font-size: 32px;
+  margin: 0 8px;
+  font-size: 28px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -734,12 +734,13 @@ section .container {
   gap: 15px;
 }
 
-.contact .info-box i.bx {
+.contact .info-box i.fa-solid,
+.contact .info-box i.fa-regular {
   font-size: 24px;
   color: var(--accent);
   border-radius: 50%;
   padding: 14px;
-  float: left;
+
   background: rgba(230, 241, 255, 0.1);
 }
 
