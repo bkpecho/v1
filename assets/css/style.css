@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# General
+# Variables
 --------------------------------------------------------------*/
 :root {
   --primary: #0a192f;
@@ -16,6 +16,9 @@
   --ff-mono: 'Space Mono', monospace;
 }
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: var(--ff-sans);
   background-color: var(--primary);
@@ -682,9 +685,17 @@ section .container {
   background: rgba(10, 25, 47, 0.6);
 }
 
+.portfolio .portfolio-wrap img {
+  transition: 2s;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.1) rotate(-1deg);
+}
+
 .portfolio .portfolio-wrap::before {
   content: '';
-  background: rgba(10, 25, 47, 0.6);
+  background: rgba(10, 25, 47, 0.8);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -748,7 +759,6 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-info p {
   color: var(--white) fff;
   font-size: 16px;
-  text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
@@ -870,9 +880,8 @@ section .container {
 .contact .info-box {
   border-radius: 0.25rem;
   color: #444444;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
-  background: rgba(230, 241, 255, 0.08);
   display: flex;
   align-items: center;
   gap: 15px;
@@ -930,8 +939,7 @@ section .container {
 
 .contact .php-email-form {
   border-radius: 0.25rem;
-  padding: 30px;
-  background: rgba(230, 241, 255, 0.08);
+  padding: 20px 0;
 }
 
 .contact .php-email-form .error-message {
