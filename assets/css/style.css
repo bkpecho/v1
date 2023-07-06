@@ -542,14 +542,11 @@ section .container {
   align-items: center;
   padding: 20px;
   background: rgba(230, 241, 255, 0.08);
-  transition: ease-in-out 0.3s;
   gap: 10px;
 }
 
-.interests .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
+.interests .icon-box img {
+  margin-right: 8px;
 }
 
 .interests .icon-box h3 {
@@ -566,6 +563,34 @@ section .container {
   background: rgba(230, 241, 255, 0.12);
 }
 
+@media (max-width: 640px) {
+  .interests .icon-box {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .row .col-md-4 {
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background: rgba(230, 241, 255, 0.08);
+  }
+
+  .interests .icon-box img {
+    margin-right: 0;
+  }
+
+  .interests .icon-box h3 {
+    display: none;
+  }
+
+  .interests .icon-box:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
