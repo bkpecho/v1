@@ -2,15 +2,15 @@
 # Variables
 --------------------------------------------------------------*/
 :root {
-  --primary: #0a192f;
-  --light-primary: #112240;
-  --lightest-primary: #233554;
-  --secondary: #8892b0;
-  --light-secondary: #a8b2d1;
-  --lightest-secondary: #ccd6f6;
-  --white: #e6f1ff;
-  --accent: #64ffda;
-  --hover: #32d5b7;
+  --primary: 10, 25, 47; /*#0a192f*/
+  --light-primary: 17, 34, 64; /*#112240*/
+  --lightest-primary: 35, 53, 84; /*#233554*/
+  --secondary: 136, 146, 176; /*#8892b0*/
+  --light-secondary: 168, 178, 209; /*#a8b2d1*/
+  --lightest-secondary: 204, 214, 246; /*#ccd6f6*/
+  --white: 230, 241, 255; /*#e6f1ff*/
+  --accent: 100, 255, 218; /*#64ffda*/
+  --hover: 50, 213, 183; /*#32d5b7*/
 
   --ff-sans: 'Karla', sans-serif;
   --ff-mono: 'Space Mono', monospace;
@@ -21,8 +21,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--ff-sans);
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: rgba(var(--primary), 1);
+  color: rgba(var(--white), 1);
   position: relative;
   background: transparent;
 }
@@ -30,7 +30,7 @@ body {
 body::before {
   content: '';
   position: fixed;
-  background: var(--primary);
+  background: rgba(var(--primary), 1);
   background-size: cover;
   left: 0;
   right: 0;
@@ -46,12 +46,12 @@ body::before {
 }
 
 a {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--hover);
+  color: rgba(var(--accent), 1);
   text-decoration: none;
 }
 
@@ -91,24 +91,24 @@ h6 {
 }
 
 #header h1 a {
-  color: var(--lightest-secondary);
+  color: rgba(var(--lightest-secondary), 1);
   line-height: 1;
   display: inline-block;
 }
 
 #header h1 a:hover {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
 }
 
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: var(--light-secondary);
+  color: rgba(var(--light-secondary), 1);
 }
 
 #header h2 span {
-  color: var(--white);
-  border-bottom: 2px solid var(--accent);
+  color: rgba(var(--white), 1);
+  border-bottom: 2px solid rgba(var(--accent), 1);
   padding-bottom: 6px;
 }
 
@@ -128,7 +128,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
+  color: rgba(var(--white), 1);
   line-height: 1;
   margin-right: 10px;
   border-radius: 50%;
@@ -136,7 +136,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   transform: translateY(-3px);
 }
 
@@ -178,7 +178,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(10, 25, 47, 0.9);
+  background: rgba(var(--primary), 0.9);
   padding: 15px;
   display: flex;
 }
@@ -194,13 +194,13 @@ h6 {
 }
 
 #header.header-top h1 a {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   line-height: 1;
   display: inline-block;
 }
 
 #header.header-top h1 a:hover {
-  color: var(--lightest-secondary);
+  color: rgba(var(--lightest-secondary), 1);
 }
 
 #header.header-top img {
@@ -271,7 +271,7 @@ h6 {
   font-size: 16px;
   font-family: var(--ff-mono) !important;
   font-weight: 400;
-  color: var(--secondary);
+  color: rgba(var(--secondary), 1);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -290,7 +290,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: var(--accent);
+  background-color: rgba(var(--accent), 1);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -307,21 +307,21 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
 }
 
 .navbar li:last-child {
-  border: 1px solid var(--accent);
+  border: 1px solid rgba(var(--accent), 1);
   border-radius: 0.25rem;
   padding: 10px 16px;
 }
 
 .navbar li:last-child:hover {
-  box-shadow: 3px 3px var(--accent);
+  box-shadow: 3px 3px rgba(var(--accent), 1);
   transform: translate(-3px, -3px);
 }
 .navbar li:last-child a {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
 }
 
 .navbar li:last-child a::before {
@@ -332,7 +332,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: var(--white);
+  color: rgba(var(--white), 1);
   font-size: 24px;
   cursor: pointer;
   display: none;
@@ -360,7 +360,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(10, 25, 47, 0.98);
+  background: rgba(var(--primary), 0.98);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -385,7 +385,7 @@ h6 {
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid rgba(230, 241, 255, 0.2);
+  border: 2px solid rgba(var(--white), 0.2);
 }
 
 .navbar-mobile li {
@@ -428,7 +428,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(10, 25, 47, 0.9);
+  background: rgba(var(--primary), 0.9);
   padding: 30px;
 }
 
@@ -450,7 +450,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--secondary);
+  color: rgba(var(--secondary), 1);
   font-family: var(--ff-sans);
 }
 
@@ -459,7 +459,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent);
+  background: rgba(var(--accent), 1);
   margin: 4px 10px;
 }
 
@@ -470,7 +470,7 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--ff-mono);
-  color: var(--white);
+  color: rgba(var(--white), 1);
 }
 
 /*--------------------------------------------------------------
@@ -479,7 +479,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 24px;
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   font-family: var(--ff-mono);
 }
 
@@ -505,7 +505,7 @@ section .container {
 .about-me .content ul i {
   font-size: 18px;
   margin-right: 5px;
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   line-height: 0;
 }
 
@@ -518,13 +518,13 @@ section .container {
 }
 
 .about-me span {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   text-decoration: none;
 }
 
 .about-me span.underline {
-  color: var(--white);
-  border-bottom: 2px solid var(--accent);
+  color: rgba(var(--white), 1);
+  border-bottom: 2px solid rgba(var(--accent), 1);
 }
 
 .col-lg-8.pt-4.pt-lg-0.content {
@@ -541,7 +541,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: rgba(230, 241, 255, 0.08);
+  background: rgba(var(--white), 0.08);
   gap: 10px;
 }
 
@@ -556,11 +556,11 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 16px;
-  color: var(--white);
+  color: rgba(var(--white), 1);
 }
 
 .interests .icon-box:hover {
-  background: rgba(230, 241, 255, 0.12);
+  background: rgba(var(--white), 0.12);
 }
 
 @media (max-width: 640px) {
@@ -576,7 +576,7 @@ section .container {
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
-    background: rgba(230, 241, 255, 0.08);
+    background: rgba(var(--white), 0.08);
   }
 
   .interests .icon-box img {
@@ -615,8 +615,8 @@ section .container {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--white);
-  background: rgba(230, 241, 255, 0.1);
+  color: rgba(var(--white), 1);
+  background: rgba(var(--white), 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
@@ -624,7 +624,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: var(--secondary);
+  background: rgba(var(--secondary), 1);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -636,7 +636,7 @@ section .container {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(10, 25, 47, 0.6);
+  background: rgba(var(--primary), 0.6);
 }
 
 .portfolio .portfolio-wrap img {
@@ -649,7 +649,7 @@ section .container {
 
 .portfolio .portfolio-wrap::before {
   content: '';
-  background: rgba(10, 25, 47, 0.8);
+  background: rgba(var(--primary), 0.8);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -684,8 +684,8 @@ section .container {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid var(--white);
-  border-left: 3px solid var(--white);
+  border-top: 3px solid rgba(var(--white), 1);
+  border-left: 3px solid rgba(var(--white), 1);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -698,23 +698,32 @@ section .container {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid var(--white);
-  border-right: 3px solid var(--white);
+  border-bottom: 3px solid rgba(var(--white), 1);
+  border-right: 3px solid rgba(var(--white), 1);
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: var(--white);
+  font-size: 24px;
+  color: rgba(var(--white), 1);
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: var(--white) fff;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
+.portfolio .portfolio-wrap .portfolio-info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-wrap .portfolio-info ul li {
+  background-color: rgba(var(--hover), 1);
+  color: rgba(var(--accent), 1);
+  border-radius: 9999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+  margin: 5px;
+  font-size: 12px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -723,7 +732,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: var(--white);
+  color: rgba(var(--white), 1);
   margin: 0 8px;
   font-size: 28px;
   display: inline-block;
@@ -731,7 +740,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: var(--hover);
+  color: rgba(var(--hover), 1);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -776,7 +785,7 @@ section .container {
   border-radius: 50%;
   padding: 14px;
 
-  background: rgba(230, 241, 255, 0.1);
+  background: rgba(var(--white), 0.1);
 }
 
 .contact .info {
@@ -786,7 +795,7 @@ section .container {
 }
 
 .contact .info-box h3 {
-  color: rgba(230, 241, 255, 0.5);
+  color: rgba(var(--white), 0.5);
   font-family: var(--ff-mono);
   font-size: 20px;
   font-weight: 700;
@@ -798,7 +807,7 @@ section .container {
   font-size: 16px;
   font-family: var(--ff-sans);
   font-weight: 400;
-  color: var(--white);
+  color: rgba(var(--white), 1);
   margin: 0;
 }
 
@@ -810,14 +819,14 @@ section .container {
 .contact .info-box .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: var(--white);
+  color: rgba(var(--white), 1);
   line-height: 1;
   margin-right: 15px;
   transition: 0.3s;
 }
 
 .contact .info-box .social-links a:hover {
-  color: var(--hover);
+  color: rgba(var(--hover), 1);
 }
 
 .contact .php-email-form {
@@ -828,7 +837,7 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: #ed3c0d;
-  color: var(--white);
+  color: rgba(var(--white), 1);
   text-align: left;
   padding: 15px;
   font-family: var(--ff-mono);
@@ -841,8 +850,8 @@ section .container {
 
 .contact .php-email-form .sent-message {
   display: none;
-  background: rgba(230, 241, 255, 0.08);
-  color: var(--accent);
+  background: rgba(var(--white), 0.08);
+  color: rgba(var(--accent), 1);
   text-align: center;
   padding: 15px;
   font-family: var(--ff-mono);
@@ -851,7 +860,7 @@ section .container {
 
 .contact .php-email-form .loading {
   display: none;
-  background: rgba(230, 241, 255, 0.08);
+  background: rgba(var(--white), 0.08);
   text-align: center;
   padding: 15px;
 }
@@ -863,8 +872,8 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent);
-  border-top-color: #eee;
+  border: 3px solid rgba(var(--accent), 1);
+  border-top-color: rgba(var(--white), 0.8);
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input,
@@ -880,18 +889,18 @@ section .container {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  background-color: rgba(230, 241, 255, 0.11);
+  background-color: rgba(var(--white), 0.11);
 }
 
 .contact .php-email-form input::-moz-placeholder,
 .contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(230, 241, 255, 0.3);
+  color: rgba(var(--white), 0.3);
   opacity: 1;
 }
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: rgba(230, 241, 255, 0.3);
+  color: rgba(var(--white), 0.3);
   opacity: 1;
 }
 
@@ -908,15 +917,15 @@ section .container {
 .contact .php-email-form button[type='submit'] {
   font-family: var(--ff-mono);
   background: transparent;
-  border: 1px solid var(--accent);
+  border: 1px solid rgba(var(--accent), 1);
   padding: 10px 30px;
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   transition: 0.3s;
   border-radius: 0.25rem;
 }
 
 .contact .php-email-form button[type='submit']:hover {
-  box-shadow: 3px 3px var(--accent);
+  box-shadow: 3px 3px rgba(var(--accent), 1);
   transform: translate(-3px, -3px);
 }
 
@@ -946,7 +955,7 @@ button[type='submit']:disabled {
   padding: 15px;
   text-align: right;
   font-size: 12px;
-  color: var(--white);
+  color: rgba(var(--white), 1);
   z-index: 999999;
 }
 
@@ -954,17 +963,17 @@ button[type='submit']:disabled {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(10, 25, 47, 0.8);
+    background: rgba(var(--primary), 0.8);
   }
 }
 
 .credits a {
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   transition: 0.3s;
 }
 
 .credits a:hover {
-  color: var(--hover);
+  color: rgba(var(--hover), 1);
 }
 
 /* Floating Squares */
@@ -984,7 +993,7 @@ button[type='submit']:disabled {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: var(--lightest-primary);
+  background: rgba(var(--lightest-primary), 1);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
