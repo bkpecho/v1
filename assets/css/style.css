@@ -713,12 +713,14 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-info ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info ul li {
-  background-color: rgba(var(--hover), 1);
-  color: rgba(var(--accent), 1);
+  background-color: rgba(var(--hover), 0.8);
+  color: rgba(var(--white), 1);
   border-radius: 9999px;
   padding: 4px 12px;
   white-space: nowrap;
@@ -781,7 +783,7 @@ section .container {
 .contact .info-box i.fa-solid,
 .contact .info-box i.fa-regular {
   font-size: 24px;
-  color: var(--accent);
+  color: rgba(var(--accent), 1);
   border-radius: 50%;
   padding: 14px;
 
