@@ -1,472 +1,706 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bryan King Pecho (@bkpecho) / Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!"
+    />
+    <meta
+      name="keywords"
+      content="Bryan King Pecho, software engineer, web development, JavaScript, MERN stack, open-source, AI"
+    />
+    <meta name="author" content="Bryan King Pecho" />
 
-  <title>
-    Bryan King Pecho (@bkpecho) / Portfolio
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!" />
-  <meta name="keywords" content="Bryan King Pecho, software engineer, web development, JavaScript, MERN stack, open-source, AI" />
-  <meta name="author" content="Bryan King Pecho" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bkpecho.tech" />
+    <meta
+      property="og:title"
+      content="Bryan King Pecho (@bkpecho) / Portfolio"
+    />
+    <meta
+      property="og:image"
+      content="https://bk-v1.netlify.app/assets/img/bryankingpecho.jpg"
+    />
+    <meta
+      property="og:description"
+      content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!"
+    />
+    <meta property="og:site_name" content="Bryan King Pecho" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bkpecho.tech" />
-  <meta property="og:title" content="Bryan King Pecho (@bkpecho) / Portfolio" />
-  <meta property="og:image" content="https://bkpecho.tech/assets/img/bryankingpecho.jpg" />
-  <meta property="og:description" content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!" />
-  <meta property="og:site_name" content="Bryan King Pecho" />
+    <meta
+      name="twitter:card"
+      content="https://bk-v1.netlify.app/assets/img/bryankingpecho.jpg"
+    />
+    <meta name="twitter:site" content="@bkpecho" />
+    <meta name="twitter:creator" content="@bkpecho" />
+    <meta
+      name="twitter:title"
+      content="Bryan King Pecho (@bkpecho) / Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://bk-v1.netlify.app/assets/img/bryankingpecho.jpg"
+    />
 
-  <meta name="twitter:card" content="https://bkpecho.tech/assets/img/bryankingpecho.jpg">
-  <meta name="twitter:site" content="@bkpecho">
-  <meta name="twitter:creator" content="@bkpecho">
-  <meta name="twitter:title" content="Bryan King Pecho (@bkpecho) / Portfolio">
-  <meta name="twitter:description" content="I'm Bryan, a skilled software engineer specializing in web development with expertise in JavaScript and the MERN stack. Let's geek out!">
-  <meta name="twitter:image:src" content="https://bkpecho.tech/assets/img/bryankingpecho.jpg" />
+    <meta name="url" content="https://bk-v1.netlify.app/" />
 
-  <meta name="url" content="https://bkpecho.tech/">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/eca479fe41.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/eca479fe41.js" crossorigin="anonymous"></script>
+    <!-- Vendor CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="preload" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container">
+        <h1><a href="/">Bryan King Pecho</a></h1>
 
-</head>
+        <h2>
+          I'm a full-stack <span>software engineer</span> from the Philippines
+        </h2>
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="/">Bryan King Pecho</a></h1>
-
-      <h2>I'm a full-stack <span>software engineer</span> from the Philippines</h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li><a href="/" class="nav-link resume" download>Resume</a></li>
-        </ul>
-        <i class="fa-solid fa-bars mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://github.com/bkpecho" class="facebook" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/bkpecho/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/bkpecho" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- Floating Circles -->
-
-  <ul class="circles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>About Me</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/bryankingpecho.jpg" class="img-fluid avatar" alt="Image of Bryan King Pecho">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>My Story</h3>
-          <p>
-            Hello! I'm Bryan, a full-stack software engineer specializing in web development. My coding journey <span>began in 2013</span> when I stumbled upon the <span><em>marquee</em></span> element in HTML. Little did I know that this simple discovery would ignite a deep passion within me and set me on an extraordinary path towards a programming career.
-          </p>
-          <p>
-            Over the years, I've had the opportunity to delve into various programming languages. I started with <span>Pascal</span> and even took on freelancing projects using <span>Visual Basic</span>. During my college years, my focus shifted to <span>Java</span> and <span>SQL</span>. Today, my deep passion lies in <span>JavaScript</span> and the <span>MERN stack (MongoDB, Express.js, React, and Node.js)</span> for my development projects.
-          </p>
-          <p>
-            Lastly, as an advocate for <span>open source</span> initiatives, I invite you to connect with me if you share the same passion or have an exciting project in mind. <span class="underline">Let's geek out!</span>
-          </p>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-      <div class="section-title">
-        <h2>Technologies</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/html5/E34F26" />
-            <h3>HTML5</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/css3/1572B6" />
-            <h3>CSS3</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/bootstrap/7952B3" />
-            <h3>Bootstrap</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/sass/CC6699" />
-            <h3>SASS</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/javascript/F7DF1E" />
-            <h3>JavaScript</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/react/61DAFB" />
-            <h3>React</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/node.js/339933" />
-            <h3>Node.js</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/express/2E7D32" />
-            <h3>Express.js</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/mongodb/47A248" />
-            <h3>MongoDB</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/git/F05032" />
-            <h3>Git</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/linux/FCC624" />
-            <h3>Linux</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <img height="32" width="32" src="https://cdn.simpleicons.org/openai/00A67E" />
-            <h3>ChatGPT</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Interests -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link active" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a href="/" class="nav-link resume" download>Resume</a></li>
           </ul>
+          <i class="fa-solid fa-bars mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <div class="social-links">
+          <a href="https://github.com/bkpecho" class="facebook" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bkpecho/"
+            class="linkedin"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/bkpecho" class="twitter" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
       </div>
+    </header>
+    <!-- End Header -->
 
-      <div class="row portfolio-container">
+    <!-- Floating Circles -->
 
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Sushi Delight Project Image">
-            <div class="portfolio-info">
-              <h4>Sushi Delights</h4>
-              <ul>
-                <li>HTML5 </li>
-                <li>CSS3 </li>
-                <li>JavaScript </li>
-                <li>AOS Library</li>
-                <li>Vite</li>
-                <li>BEM</li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="https://github.com/bkpecho/sushi-delights" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://sushi-delights.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About Me</p>
         </div>
 
-        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="SimpliAdmin Project Image">
-            <div class="portfolio-info">
-              <h4>SimpliAdmin</h4>
-              <p>JavaScript &#8729; Node.js &#8729; Express &#8729; MongoDB &#8729; EJS &#8729; Bootstrap</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/bkpecho/SimpliAdmin" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://simpliadmin.onrender.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="Bryan King Pecho Project Image">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg"><i class="fa-brands fa-github"></i></a>
-                <a href="/"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="fa-solid fa-earth-asia"></i>
-            <div class="info">
-              <h3>My Address</h3>
-              <p>Cavite, Philippines</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="fa-solid fa-heart"></i>
-            <div class="info">
-              <h3>Social Profiles</h3>
-              <div class="social-links">
-                <a href="https://github.com/bkpecho" class="facebook" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/bkpecho/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/bkpecho" class="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="fa-regular fa-envelope"></i>
-            <div class="info">
-              <h3>Email Me</h3>
-              <p>pechobk@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="fa-solid fa-comment"></i>
-            <div class="info">
-              <h3>Let's Connect</h3>
-              <p>
-                Stay connected with me through social media for the latest updates.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <form role="form" class="php-email-form mt-4">
         <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          <div class="col-lg-4" data-aos="fade-right">
+            <img
+              src="assets/img/bryankingpecho.jpg"
+              class="img-fluid avatar"
+              alt="Image of Bryan King Pecho"
+            />
           </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>My Story</h3>
+            <p>
+              Hello! I'm Bryan, a full-stack software engineer specializing in
+              web development. My coding journey <span>began in 2013</span> when
+              I stumbled upon the <span><em>marquee</em></span> element in HTML.
+              Little did I know that this simple discovery would ignite a deep
+              passion within me and set me on an extraordinary path towards a
+              programming career.
+            </p>
+            <p>
+              Over the years, I've had the opportunity to delve into various
+              programming languages. I started with <span>Pascal</span> and even
+              took on freelancing projects using <span>Visual Basic</span>.
+              During my college years, my focus shifted to <span>Java</span> and
+              <span>SQL</span>. Today, my deep passion lies in
+              <span>JavaScript</span> and the
+              <span>MERN stack (MongoDB, Express.js, React, and Node.js)</span>
+              for my development projects.
+            </p>
+            <p>
+              Lastly, as an advocate for <span>open source</span> initiatives, I
+              invite you to connect with me if you share the same passion or
+              have an exciting project in mind.
+              <span class="underline">Let's geek out!</span>
+            </p>
           </div>
         </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <!-- End About Me -->
+
+      <!-- ======= Interests ======= -->
+      <div class="interests container">
+        <div class="section-title">
+          <h2>Technologies</h2>
         </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/html5/E34F26"
+              />
+              <h3>HTML5</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/css3/1572B6"
+              />
+              <h3>CSS3</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/bootstrap/7952B3"
+              />
+              <h3>Bootstrap</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/sass/CC6699"
+              />
+              <h3>SASS</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/javascript/F7DF1E"
+              />
+              <h3>JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/react/61DAFB"
+              />
+              <h3>React</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/node.js/339933"
+              />
+              <h3>Node.js</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/express/2E7D32"
+              />
+              <h3>Express.js</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/mongodb/47A248"
+              />
+              <h3>MongoDB</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/git/F05032"
+              />
+              <h3>Git</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/linux/FCC624"
+              />
+              <h3>Linux</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img
+                height="32"
+                width="32"
+                src="https://cdn.simpleicons.org/openai/00A67E"
+              />
+              <h3>ChatGPT</h3>
+            </div>
+          </div>
         </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <!-- End Interests -->
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>My Works</p>
         </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-1.jpg"
+                class="img-fluid"
+                alt="Sushi Delight Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>Sushi Delights</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>AOS Library</li>
+                  <li>Vite</li>
+                  <li>BEM</li>
+                </ul>
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/bkpecho/sushi-delights"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="https://sushi-delights.vercel.app/" target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-2.jpg"
+                class="img-fluid"
+                alt="SimpliAdmin Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>SimpliAdmin</h4>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>EJS</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/bkpecho/SimpliAdmin"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="https://simpliadmin.onrender.com/" target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-3.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-4.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-5.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-6.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-7.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-8.jpg"
+                class="img-fluid"
+                alt="Bryan King Pecho Project Image"
+              />
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/portfolio-9.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="/"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Me</p>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="fa-solid fa-earth-asia"></i>
+              <div class="info">
+                <h3>My Address</h3>
+                <p>Cavite, Philippines</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="fa-solid fa-heart"></i>
+              <div class="info">
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/bkpecho"
+                    class="facebook"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/bkpecho/"
+                    class="linkedin"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/bkpecho"
+                    class="twitter"
+                    target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="info">
+                <h3>Email Me</h3>
+                <p>pechobk@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="fa-solid fa-comment"></i>
+              <div class="info">
+                <h3>Let's Connect</h3>
+                <p>
+                  Stay connected with me through social media for the latest
+                  updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form role="form" class="php-email-form mt-4">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input
+              type="text"
+              class="form-control"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="form-group mt-3">
+            <textarea
+              class="form-control"
+              name="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">
+              Your message has been sent. Thank you!
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <div class="credits">
+      <small
+        >&copy; 2023
+        <a href="https://www.polywork.com/bkpecho" target="_blank"
+          >Bryan King Pecho.</a
+        >
+        All rights reserved.</small
+      >
     </div>
-  </section><!-- End Contact Section -->
 
-  <div class="credits">
-    <small>&copy; 2023 <a href="https://www.polywork.com/bkpecho" target="_blank">Bryan King Pecho.</a> All rights
-      reserved.</small>
-  </div>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script
+      src="assets/vendor/isotope-layout/isotope.pkgd.min.js"
+      defer
+    ></script>
+    <script src="assets/vendor/php-email-form/validate.js" defer></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-  <script src="assets/vendor/php-email-form/validate.js" defer></script>
-
-  <!-- EmailJS Script -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
-
-</body>
-
+    <!-- EmailJS Script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+  </body>
 </html>
